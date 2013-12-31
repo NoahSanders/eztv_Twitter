@@ -32,6 +32,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="oAuthConnection">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\oAuthConnection.dll</HintPath>
+    </Reference>
+    <Reference Include="SearchEngine">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\SearchEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Streaminvi">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\Streaminvi.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,13 +51,35 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Tools">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="TweetinCore">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\TweetinCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweetinvi">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\Tweetinvi.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitterToken">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\TwitterToken.dll</HintPath>
+    </Reference>
+    <Reference Include="UILibrary">
+      <HintPath>..\packages\TweetinviAPI.0.8.3.22\lib\UILibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Tester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eztv_Twitter\eztv_Twitter.csproj">
+      <Project>{e7254358-f46a-4ae0-91f4-4ce6bf39cf05}</Project>
+      <Name>eztv_Twitter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
